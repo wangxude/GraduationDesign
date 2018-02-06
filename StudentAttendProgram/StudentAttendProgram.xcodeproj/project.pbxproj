@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78051A1020244ED200457587 /* FMDatabaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 78051A0F20244ED200457587 /* FMDatabaseService.m */; };
+		783441A22015C7EB0075243D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783441A02015C7EB0075243D /* LaunchScreen.storyboard */; };
+		783441A52015C7EB0075243D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441A42015C7EB0075243D /* main.m */; };
+		783441AF2015C7EB0075243D /* StudentAttendProgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441AE2015C7EB0075243D /* StudentAttendProgramTests.m */; };
+		783441BA2015C7EB0075243D /* StudentAttendProgramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441B92015C7EB0075243D /* StudentAttendProgramUITests.m */; };
+		783441CC2015C8000075243D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441C72015C8000075243D /* ViewController.m */; };
+		783441CD2015C8000075243D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441CA2015C8000075243D /* AppDelegate.m */; };
+		783441CE2015C8000075243D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783441CB2015C8000075243D /* Main.storyboard */; };
+		783441D02015C8090075243D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783441CF2015C8090075243D /* Assets.xcassets */; };
+		7834420A2015C82F0075243D /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441D42015C82F0075243D /* NSString+Extension.m */; };
+		7834420B2015C82F0075243D /* UIImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441D62015C82F0075243D /* UIImage+ResizeImage.m */; };
+		7834420C2015C82F0075243D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441D92015C82F0075243D /* MBProgressHUD.m */; };
+		7834420D2015C82F0075243D /* NSArray+ ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441DB2015C82F0075243D /* NSArray+ ZXPUnicode.m */; };
+		7834420E2015C82F0075243D /* NSDictionary+ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441DE2015C82F0075243D /* NSDictionary+ZXPUnicode.m */; };
+		7834420F2015C82F0075243D /* NSObject+ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441E02015C82F0075243D /* NSObject+ZXPUnicode.m */; };
+		783442102015C82F0075243D /* TLNewWorkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441E32015C82F0075243D /* TLNewWorkService.m */; };
+		783442112015C82F0075243D /* TLStudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441E72015C82F0075243D /* TLStudentModel.m */; };
+		783442122015C82F0075243D /* SAPAttendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441E92015C82F0075243D /* SAPAttendListViewController.m */; };
+		783442132015C82F0075243D /* TKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441EB2015C82F0075243D /* TKHomeViewController.m */; };
+		783442142015C82F0075243D /* TLChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441ED2015C82F0075243D /* TLChartsViewController.m */; };
+		783442152015C82F0075243D /* TLStudentInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441EF2015C82F0075243D /* TLStudentInformationViewController.m */; };
+		783442162015C82F0075243D /* TLStudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441F12015C82F0075243D /* TLStudentTableViewCell.m */; };
+		783442172015C82F0075243D /* TLStudentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441F42015C82F0075243D /* TLStudentViewModel.m */; };
+		783442182015C82F0075243D /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441F82015C82F0075243D /* UIButton+Extension.m */; };
+		783442192015C82F0075243D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441FA2015C82F0075243D /* UIView+Extension.m */; };
+		7834421A2015C82F0075243D /* KSYTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 783441FE2015C82F0075243D /* KSYTabBarButton.m */; };
+		7834421B2015C82F0075243D /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442002015C82F0075243D /* UIBarButtonItem+Item.m */; };
+		7834421C2015C82F0075243D /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442022015C82F0075243D /* UIImage+image.m */; };
+		7834421D2015C82F0075243D /* WXCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442042015C82F0075243D /* WXCustomTabBar.m */; };
+		7834421E2015C82F0075243D /* KSYNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442072015C82F0075243D /* KSYNavigationViewController.m */; };
+		7834421F2015C82F0075243D /* KSYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442092015C82F0075243D /* KSYTabBarViewController.m */; };
+		783442232015C9FC0075243D /* StudentAttendProgram-.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783442222015C9FC0075243D /* StudentAttendProgram-.swift */; };
+		7834422F2015DB880075243D /* DemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834422D2015DB880075243D /* DemoBaseViewController.m */; };
+		783442432015ECCC0075243D /* CalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442322015ECCC0075243D /* CalendarDayCell.m */; };
+		783442442015ECCC0075243D /* CalendarDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442342015ECCC0075243D /* CalendarDayModel.m */; };
+		783442452015ECCC0075243D /* CalendarHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442362015ECCC0075243D /* CalendarHomeViewController.m */; };
+		783442462015ECCC0075243D /* CalendarLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442382015ECCC0075243D /* CalendarLogic.m */; };
+		783442472015ECCC0075243D /* CalendarMonthCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834423A2015ECCC0075243D /* CalendarMonthCollectionViewLayout.m */; };
+		783442482015ECCC0075243D /* CalendarMonthHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834423C2015ECCC0075243D /* CalendarMonthHeaderView.m */; };
+		783442492015ECCC0075243D /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834423E2015ECCC0075243D /* CalendarViewController.m */; };
+		7834424A2015ECCC0075243D /* chack.png in Resources */ = {isa = PBXBuildFile; fileRef = 7834423F2015ECCC0075243D /* chack.png */; };
+		7834424B2015ECCC0075243D /* NSDate+WQCalendarLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 783442422015ECCC0075243D /* NSDate+WQCalendarLogic.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		783441AB2015C7EB0075243D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7834418A2015C7EA0075243D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783441912015C7EB0075243D;
+			remoteInfo = StudentAttendProgram;
+		};
+		783441B62015C7EB0075243D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7834418A2015C7EA0075243D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783441912015C7EB0075243D;
+			remoteInfo = StudentAttendProgram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78051A0E20244ED200457587 /* FMDatabaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseService.h; sourceTree = "<group>"; };
+		78051A0F20244ED200457587 /* FMDatabaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseService.m; sourceTree = "<group>"; };
+		783441922015C7EB0075243D /* StudentAttendProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentAttendProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		783441A12015C7EB0075243D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		783441A32015C7EB0075243D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783441A42015C7EB0075243D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		783441AA2015C7EB0075243D /* StudentAttendProgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentAttendProgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		783441AE2015C7EB0075243D /* StudentAttendProgramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentAttendProgramTests.m; sourceTree = "<group>"; };
+		783441B02015C7EB0075243D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783441B52015C7EB0075243D /* StudentAttendProgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentAttendProgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		783441B92015C7EB0075243D /* StudentAttendProgramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentAttendProgramUITests.m; sourceTree = "<group>"; };
+		783441BB2015C7EB0075243D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783441C72015C8000075243D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		783441C82015C8000075243D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		783441C92015C8000075243D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		783441CA2015C8000075243D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		783441CB2015C8000075243D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		783441CF2015C8090075243D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		783441D32015C82F0075243D /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		783441D42015C82F0075243D /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		783441D52015C82F0075243D /* UIImage+ResizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeImage.h"; sourceTree = "<group>"; };
+		783441D62015C82F0075243D /* UIImage+ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeImage.m"; sourceTree = "<group>"; };
+		783441D82015C82F0075243D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		783441D92015C82F0075243D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		783441DB2015C82F0075243D /* NSArray+ ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ ZXPUnicode.m"; sourceTree = "<group>"; };
+		783441DC2015C82F0075243D /* NSArray+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZXPUnicode.h"; sourceTree = "<group>"; };
+		783441DD2015C82F0075243D /* NSDictionary+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZXPUnicode.h"; sourceTree = "<group>"; };
+		783441DE2015C82F0075243D /* NSDictionary+ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZXPUnicode.m"; sourceTree = "<group>"; };
+		783441DF2015C82F0075243D /* NSObject+ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXPUnicode.h"; sourceTree = "<group>"; };
+		783441E02015C82F0075243D /* NSObject+ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXPUnicode.m"; sourceTree = "<group>"; };
+		783441E22015C82F0075243D /* TLNewWorkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNewWorkService.h; sourceTree = "<group>"; };
+		783441E32015C82F0075243D /* TLNewWorkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNewWorkService.m; sourceTree = "<group>"; };
+		783441E62015C82F0075243D /* TLStudentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLStudentModel.h; sourceTree = "<group>"; };
+		783441E72015C82F0075243D /* TLStudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLStudentModel.m; sourceTree = "<group>"; };
+		783441E82015C82F0075243D /* SAPAttendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPAttendListViewController.h; sourceTree = "<group>"; };
+		783441E92015C82F0075243D /* SAPAttendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPAttendListViewController.m; sourceTree = "<group>"; };
+		783441EA2015C82F0075243D /* TKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKHomeViewController.h; sourceTree = "<group>"; };
+		783441EB2015C82F0075243D /* TKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKHomeViewController.m; sourceTree = "<group>"; };
+		783441EC2015C82F0075243D /* TLChartsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLChartsViewController.h; sourceTree = "<group>"; };
+		783441ED2015C82F0075243D /* TLChartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLChartsViewController.m; sourceTree = "<group>"; };
+		783441EE2015C82F0075243D /* TLStudentInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLStudentInformationViewController.h; sourceTree = "<group>"; };
+		783441EF2015C82F0075243D /* TLStudentInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLStudentInformationViewController.m; sourceTree = "<group>"; };
+		783441F02015C82F0075243D /* TLStudentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLStudentTableViewCell.h; sourceTree = "<group>"; };
+		783441F12015C82F0075243D /* TLStudentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLStudentTableViewCell.m; sourceTree = "<group>"; };
+		783441F32015C82F0075243D /* TLStudentViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLStudentViewModel.h; sourceTree = "<group>"; };
+		783441F42015C82F0075243D /* TLStudentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLStudentViewModel.m; sourceTree = "<group>"; };
+		783441F72015C82F0075243D /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		783441F82015C82F0075243D /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		783441F92015C82F0075243D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		783441FA2015C82F0075243D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		783441FD2015C82F0075243D /* KSYTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYTabBarButton.h; sourceTree = "<group>"; };
+		783441FE2015C82F0075243D /* KSYTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYTabBarButton.m; sourceTree = "<group>"; };
+		783441FF2015C82F0075243D /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		783442002015C82F0075243D /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		783442012015C82F0075243D /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		783442022015C82F0075243D /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		783442032015C82F0075243D /* WXCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCustomTabBar.h; sourceTree = "<group>"; };
+		783442042015C82F0075243D /* WXCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCustomTabBar.m; sourceTree = "<group>"; };
+		783442062015C82F0075243D /* KSYNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYNavigationViewController.h; sourceTree = "<group>"; };
+		783442072015C82F0075243D /* KSYNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYNavigationViewController.m; sourceTree = "<group>"; };
+		783442082015C82F0075243D /* KSYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYTabBarViewController.h; sourceTree = "<group>"; };
+		783442092015C82F0075243D /* KSYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYTabBarViewController.m; sourceTree = "<group>"; };
+		783442202015C84F0075243D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		783442212015C9FC0075243D /* StudentAttendProgram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudentAttendProgram-Bridging-Header.h"; sourceTree = "<group>"; };
+		783442222015C9FC0075243D /* StudentAttendProgram-.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StudentAttendProgram-.swift"; sourceTree = "<group>"; };
+		7834422D2015DB880075243D /* DemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBaseViewController.m; sourceTree = "<group>"; };
+		7834422E2015DB880075243D /* DemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBaseViewController.h; sourceTree = "<group>"; };
+		783442312015ECCC0075243D /* CalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayCell.h; sourceTree = "<group>"; };
+		783442322015ECCC0075243D /* CalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDayCell.m; sourceTree = "<group>"; };
+		783442332015ECCC0075243D /* CalendarDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayModel.h; sourceTree = "<group>"; };
+		783442342015ECCC0075243D /* CalendarDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDayModel.m; sourceTree = "<group>"; };
+		783442352015ECCC0075243D /* CalendarHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHomeViewController.h; sourceTree = "<group>"; };
+		783442362015ECCC0075243D /* CalendarHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarHomeViewController.m; sourceTree = "<group>"; };
+		783442372015ECCC0075243D /* CalendarLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarLogic.h; sourceTree = "<group>"; };
+		783442382015ECCC0075243D /* CalendarLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarLogic.m; sourceTree = "<group>"; };
+		783442392015ECCC0075243D /* CalendarMonthCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarMonthCollectionViewLayout.h; sourceTree = "<group>"; };
+		7834423A2015ECCC0075243D /* CalendarMonthCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarMonthCollectionViewLayout.m; sourceTree = "<group>"; };
+		7834423B2015ECCC0075243D /* CalendarMonthHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarMonthHeaderView.h; sourceTree = "<group>"; };
+		7834423C2015ECCC0075243D /* CalendarMonthHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarMonthHeaderView.m; sourceTree = "<group>"; };
+		7834423D2015ECCC0075243D /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		7834423E2015ECCC0075243D /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		7834423F2015ECCC0075243D /* chack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chack.png; sourceTree = "<group>"; };
+		783442402015ECCC0075243D /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		783442412015ECCC0075243D /* NSDate+WQCalendarLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WQCalendarLogic.h"; sourceTree = "<group>"; };
+		783442422015ECCC0075243D /* NSDate+WQCalendarLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WQCalendarLogic.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7834418F2015C7EB0075243D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783441A72015C7EB0075243D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783441B22015C7EB0075243D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		783441892015C7EA0075243D = {
+			isa = PBXGroup;
+			children = (
+				783441942015C7EB0075243D /* StudentAttendProgram */,
+				783441AD2015C7EB0075243D /* StudentAttendProgramTests */,
+				783441B82015C7EB0075243D /* StudentAttendProgramUITests */,
+				783441932015C7EB0075243D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		783441932015C7EB0075243D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				783441922015C7EB0075243D /* StudentAttendProgram.app */,
+				783441AA2015C7EB0075243D /* StudentAttendProgramTests.xctest */,
+				783441B52015C7EB0075243D /* StudentAttendProgramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		783441942015C7EB0075243D /* StudentAttendProgram */ = {
+			isa = PBXGroup;
+			children = (
+				783441C92015C8000075243D /* AppDelegate.h */,
+				783441CA2015C8000075243D /* AppDelegate.m */,
+				783441C82015C8000075243D /* ViewController.h */,
+				783441C72015C8000075243D /* ViewController.m */,
+				783442302015ECCC0075243D /* ZFCalendar */,
+				783441D12015C82F0075243D /* Libs */,
+				783441F52015C82F0075243D /* MainFrame */,
+				783441E42015C82F0075243D /* SignIn */,
+				783441E12015C82F0075243D /* Tool */,
+				783441A02015C7EB0075243D /* LaunchScreen.storyboard */,
+				783441CB2015C8000075243D /* Main.storyboard */,
+				783442202015C84F0075243D /* PrefixHeader.pch */,
+				783441CF2015C8090075243D /* Assets.xcassets */,
+				783441A32015C7EB0075243D /* Info.plist */,
+				783441A42015C7EB0075243D /* main.m */,
+				783442222015C9FC0075243D /* StudentAttendProgram-.swift */,
+				783442212015C9FC0075243D /* StudentAttendProgram-Bridging-Header.h */,
+			);
+			path = StudentAttendProgram;
+			sourceTree = "<group>";
+		};
+		783441AD2015C7EB0075243D /* StudentAttendProgramTests */ = {
+			isa = PBXGroup;
+			children = (
+				783441AE2015C7EB0075243D /* StudentAttendProgramTests.m */,
+				783441B02015C7EB0075243D /* Info.plist */,
+			);
+			path = StudentAttendProgramTests;
+			sourceTree = "<group>";
+		};
+		783441B82015C7EB0075243D /* StudentAttendProgramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				783441B92015C7EB0075243D /* StudentAttendProgramUITests.m */,
+				783441BB2015C7EB0075243D /* Info.plist */,
+			);
+			path = StudentAttendProgramUITests;
+			sourceTree = "<group>";
+		};
+		783441D12015C82F0075243D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				783441D22015C82F0075243D /* Category */,
+				783441D72015C82F0075243D /* MBProgressHUD */,
+				783441DA2015C82F0075243D /* ZXPUnicode */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		783441D22015C82F0075243D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				783441D32015C82F0075243D /* NSString+Extension.h */,
+				783441D42015C82F0075243D /* NSString+Extension.m */,
+				783441D52015C82F0075243D /* UIImage+ResizeImage.h */,
+				783441D62015C82F0075243D /* UIImage+ResizeImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		783441D72015C82F0075243D /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				783441D82015C82F0075243D /* MBProgressHUD.h */,
+				783441D92015C82F0075243D /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		783441DA2015C82F0075243D /* ZXPUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				783441DB2015C82F0075243D /* NSArray+ ZXPUnicode.m */,
+				783441DC2015C82F0075243D /* NSArray+ZXPUnicode.h */,
+				783441DD2015C82F0075243D /* NSDictionary+ZXPUnicode.h */,
+				783441DE2015C82F0075243D /* NSDictionary+ZXPUnicode.m */,
+				783441DF2015C82F0075243D /* NSObject+ZXPUnicode.h */,
+				783441E02015C82F0075243D /* NSObject+ZXPUnicode.m */,
+			);
+			path = ZXPUnicode;
+			sourceTree = "<group>";
+		};
+		783441E12015C82F0075243D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				783441E22015C82F0075243D /* TLNewWorkService.h */,
+				783441E32015C82F0075243D /* TLNewWorkService.m */,
+				78051A0E20244ED200457587 /* FMDatabaseService.h */,
+				78051A0F20244ED200457587 /* FMDatabaseService.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		783441E42015C82F0075243D /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				783441E52015C82F0075243D /* Model */,
+				783441E82015C82F0075243D /* SAPAttendListViewController.h */,
+				783441E92015C82F0075243D /* SAPAttendListViewController.m */,
+				783441EA2015C82F0075243D /* TKHomeViewController.h */,
+				783441EB2015C82F0075243D /* TKHomeViewController.m */,
+				7834422E2015DB880075243D /* DemoBaseViewController.h */,
+				7834422D2015DB880075243D /* DemoBaseViewController.m */,
+				783441EC2015C82F0075243D /* TLChartsViewController.h */,
+				783441ED2015C82F0075243D /* TLChartsViewController.m */,
+				783441EE2015C82F0075243D /* TLStudentInformationViewController.h */,
+				783441EF2015C82F0075243D /* TLStudentInformationViewController.m */,
+				783441F02015C82F0075243D /* TLStudentTableViewCell.h */,
+				783441F12015C82F0075243D /* TLStudentTableViewCell.m */,
+				783441F22015C82F0075243D /* ViewModel */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		783441E52015C82F0075243D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				783441E62015C82F0075243D /* TLStudentModel.h */,
+				783441E72015C82F0075243D /* TLStudentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		783441F22015C82F0075243D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				783441F32015C82F0075243D /* TLStudentViewModel.h */,
+				783441F42015C82F0075243D /* TLStudentViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		783441F52015C82F0075243D /* MainFrame */ = {
+			isa = PBXGroup;
+			children = (
+				783441F62015C82F0075243D /* Category */,
+				783441FB2015C82F0075243D /* Model */,
+				783441FC2015C82F0075243D /* View */,
+				783442052015C82F0075243D /* ViewController */,
+			);
+			path = MainFrame;
+			sourceTree = "<group>";
+		};
+		783441F62015C82F0075243D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				783441F72015C82F0075243D /* UIButton+Extension.h */,
+				783441F82015C82F0075243D /* UIButton+Extension.m */,
+				783441F92015C82F0075243D /* UIView+Extension.h */,
+				783441FA2015C82F0075243D /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		783441FB2015C82F0075243D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		783441FC2015C82F0075243D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				783441FD2015C82F0075243D /* KSYTabBarButton.h */,
+				783441FE2015C82F0075243D /* KSYTabBarButton.m */,
+				783441FF2015C82F0075243D /* UIBarButtonItem+Item.h */,
+				783442002015C82F0075243D /* UIBarButtonItem+Item.m */,
+				783442012015C82F0075243D /* UIImage+image.h */,
+				783442022015C82F0075243D /* UIImage+image.m */,
+				783442032015C82F0075243D /* WXCustomTabBar.h */,
+				783442042015C82F0075243D /* WXCustomTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		783442052015C82F0075243D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				783442062015C82F0075243D /* KSYNavigationViewController.h */,
+				783442072015C82F0075243D /* KSYNavigationViewController.m */,
+				783442082015C82F0075243D /* KSYTabBarViewController.h */,
+				783442092015C82F0075243D /* KSYTabBarViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		783442302015ECCC0075243D /* ZFCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				783442312015ECCC0075243D /* CalendarDayCell.h */,
+				783442322015ECCC0075243D /* CalendarDayCell.m */,
+				783442332015ECCC0075243D /* CalendarDayModel.h */,
+				783442342015ECCC0075243D /* CalendarDayModel.m */,
+				783442352015ECCC0075243D /* CalendarHomeViewController.h */,
+				783442362015ECCC0075243D /* CalendarHomeViewController.m */,
+				783442372015ECCC0075243D /* CalendarLogic.h */,
+				783442382015ECCC0075243D /* CalendarLogic.m */,
+				783442392015ECCC0075243D /* CalendarMonthCollectionViewLayout.h */,
+				7834423A2015ECCC0075243D /* CalendarMonthCollectionViewLayout.m */,
+				7834423B2015ECCC0075243D /* CalendarMonthHeaderView.h */,
+				7834423C2015ECCC0075243D /* CalendarMonthHeaderView.m */,
+				7834423D2015ECCC0075243D /* CalendarViewController.h */,
+				7834423E2015ECCC0075243D /* CalendarViewController.m */,
+				7834423F2015ECCC0075243D /* chack.png */,
+				783442402015ECCC0075243D /* Color.h */,
+				783442412015ECCC0075243D /* NSDate+WQCalendarLogic.h */,
+				783442422015ECCC0075243D /* NSDate+WQCalendarLogic.m */,
+			);
+			path = ZFCalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		783441912015C7EB0075243D /* StudentAttendProgram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783441BE2015C7EB0075243D /* Build configuration list for PBXNativeTarget "StudentAttendProgram" */;
+			buildPhases = (
+				7834418E2015C7EB0075243D /* Sources */,
+				7834418F2015C7EB0075243D /* Frameworks */,
+				783441902015C7EB0075243D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudentAttendProgram;
+			productName = StudentAttendProgram;
+			productReference = 783441922015C7EB0075243D /* StudentAttendProgram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		783441A92015C7EB0075243D /* StudentAttendProgramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783441C12015C7EB0075243D /* Build configuration list for PBXNativeTarget "StudentAttendProgramTests" */;
+			buildPhases = (
+				783441A62015C7EB0075243D /* Sources */,
+				783441A72015C7EB0075243D /* Frameworks */,
+				783441A82015C7EB0075243D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783441AC2015C7EB0075243D /* PBXTargetDependency */,
+			);
+			name = StudentAttendProgramTests;
+			productName = StudentAttendProgramTests;
+			productReference = 783441AA2015C7EB0075243D /* StudentAttendProgramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		783441B42015C7EB0075243D /* StudentAttendProgramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783441C42015C7EB0075243D /* Build configuration list for PBXNativeTarget "StudentAttendProgramUITests" */;
+			buildPhases = (
+				783441B12015C7EB0075243D /* Sources */,
+				783441B22015C7EB0075243D /* Frameworks */,
+				783441B32015C7EB0075243D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783441B72015C7EB0075243D /* PBXTargetDependency */,
+			);
+			name = StudentAttendProgramUITests;
+			productName = StudentAttendProgramUITests;
+			productReference = 783441B52015C7EB0075243D /* StudentAttendProgramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7834418A2015C7EA0075243D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "王旭";
+				TargetAttributes = {
+					783441912015C7EB0075243D = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					783441A92015C7EB0075243D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 783441912015C7EB0075243D;
+					};
+					783441B42015C7EB0075243D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 783441912015C7EB0075243D;
+					};
+				};
+			};
+			buildConfigurationList = 7834418D2015C7EA0075243D /* Build configuration list for PBXProject "StudentAttendProgram" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 783441892015C7EA0075243D;
+			productRefGroup = 783441932015C7EB0075243D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				783441912015C7EB0075243D /* StudentAttendProgram */,
+				783441A92015C7EB0075243D /* StudentAttendProgramTests */,
+				783441B42015C7EB0075243D /* StudentAttendProgramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		783441902015C7EB0075243D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783441CE2015C8000075243D /* Main.storyboard in Resources */,
+				783441D02015C8090075243D /* Assets.xcassets in Resources */,
+				7834424A2015ECCC0075243D /* chack.png in Resources */,
+				783441A22015C7EB0075243D /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783441A82015C7EB0075243D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783441B32015C7EB0075243D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7834418E2015C7EB0075243D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783441CC2015C8000075243D /* ViewController.m in Sources */,
+				7834421C2015C82F0075243D /* UIImage+image.m in Sources */,
+				7834420F2015C82F0075243D /* NSObject+ZXPUnicode.m in Sources */,
+				783442462015ECCC0075243D /* CalendarLogic.m in Sources */,
+				7834420C2015C82F0075243D /* MBProgressHUD.m in Sources */,
+				7834421A2015C82F0075243D /* KSYTabBarButton.m in Sources */,
+				783442452015ECCC0075243D /* CalendarHomeViewController.m in Sources */,
+				7834421D2015C82F0075243D /* WXCustomTabBar.m in Sources */,
+				7834422F2015DB880075243D /* DemoBaseViewController.m in Sources */,
+				783442122015C82F0075243D /* SAPAttendListViewController.m in Sources */,
+				783442442015ECCC0075243D /* CalendarDayModel.m in Sources */,
+				7834424B2015ECCC0075243D /* NSDate+WQCalendarLogic.m in Sources */,
+				783441A52015C7EB0075243D /* main.m in Sources */,
+				783442142015C82F0075243D /* TLChartsViewController.m in Sources */,
+				783442192015C82F0075243D /* UIView+Extension.m in Sources */,
+				783442132015C82F0075243D /* TKHomeViewController.m in Sources */,
+				783442432015ECCC0075243D /* CalendarDayCell.m in Sources */,
+				783442182015C82F0075243D /* UIButton+Extension.m in Sources */,
+				783442152015C82F0075243D /* TLStudentInformationViewController.m in Sources */,
+				783441CD2015C8000075243D /* AppDelegate.m in Sources */,
+				783442232015C9FC0075243D /* StudentAttendProgram-.swift in Sources */,
+				7834420A2015C82F0075243D /* NSString+Extension.m in Sources */,
+				783442172015C82F0075243D /* TLStudentViewModel.m in Sources */,
+				783442492015ECCC0075243D /* CalendarViewController.m in Sources */,
+				7834421F2015C82F0075243D /* KSYTabBarViewController.m in Sources */,
+				7834420D2015C82F0075243D /* NSArray+ ZXPUnicode.m in Sources */,
+				783442112015C82F0075243D /* TLStudentModel.m in Sources */,
+				78051A1020244ED200457587 /* FMDatabaseService.m in Sources */,
+				7834420B2015C82F0075243D /* UIImage+ResizeImage.m in Sources */,
+				783442162015C82F0075243D /* TLStudentTableViewCell.m in Sources */,
+				783442472015ECCC0075243D /* CalendarMonthCollectionViewLayout.m in Sources */,
+				783442482015ECCC0075243D /* CalendarMonthHeaderView.m in Sources */,
+				7834420E2015C82F0075243D /* NSDictionary+ZXPUnicode.m in Sources */,
+				7834421B2015C82F0075243D /* UIBarButtonItem+Item.m in Sources */,
+				7834421E2015C82F0075243D /* KSYNavigationViewController.m in Sources */,
+				783442102015C82F0075243D /* TLNewWorkService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783441A62015C7EB0075243D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783441AF2015C7EB0075243D /* StudentAttendProgramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783441B12015C7EB0075243D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783441BA2015C7EB0075243D /* StudentAttendProgramUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		783441AC2015C7EB0075243D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783441912015C7EB0075243D /* StudentAttendProgram */;
+			targetProxy = 783441AB2015C7EB0075243D /* PBXContainerItemProxy */;
+		};
+		783441B72015C7EB0075243D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783441912015C7EB0075243D /* StudentAttendProgram */;
+			targetProxy = 783441B62015C7EB0075243D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		783441A02015C7EB0075243D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				783441A12015C7EB0075243D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		783441BC2015C7EB0075243D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		783441BD2015C7EB0075243D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		783441BF2015C7EB0075243D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z3BCBA7P2;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$SRCROOT/StudentAttendProgram/PrefixHeader.pch";
+				INFOPLIST_FILE = StudentAttendProgram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangxu.studentAttendProgram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StudentAttendProgram/StudentAttendProgram-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		783441C02015C7EB0075243D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z3BCBA7P2;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$SRCROOT/StudentAttendProgram/PrefixHeader.pch";
+				INFOPLIST_FILE = StudentAttendProgram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangxu.studentAttendProgram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StudentAttendProgram/StudentAttendProgram-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		783441C22015C7EB0075243D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudentAttendProgramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.StudentAttendProgramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudentAttendProgram.app/StudentAttendProgram";
+			};
+			name = Debug;
+		};
+		783441C32015C7EB0075243D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudentAttendProgramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.StudentAttendProgramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudentAttendProgram.app/StudentAttendProgram";
+			};
+			name = Release;
+		};
+		783441C52015C7EB0075243D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudentAttendProgramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.StudentAttendProgramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudentAttendProgram;
+			};
+			name = Debug;
+		};
+		783441C62015C7EB0075243D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StudentAttendProgramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wx.StudentAttendProgramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudentAttendProgram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7834418D2015C7EA0075243D /* Build configuration list for PBXProject "StudentAttendProgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783441BC2015C7EB0075243D /* Debug */,
+				783441BD2015C7EB0075243D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783441BE2015C7EB0075243D /* Build configuration list for PBXNativeTarget "StudentAttendProgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783441BF2015C7EB0075243D /* Debug */,
+				783441C02015C7EB0075243D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783441C12015C7EB0075243D /* Build configuration list for PBXNativeTarget "StudentAttendProgramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783441C22015C7EB0075243D /* Debug */,
+				783441C32015C7EB0075243D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783441C42015C7EB0075243D /* Build configuration list for PBXNativeTarget "StudentAttendProgramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783441C52015C7EB0075243D /* Debug */,
+				783441C62015C7EB0075243D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7834418A2015C7EA0075243D /* Project object */;
+}
