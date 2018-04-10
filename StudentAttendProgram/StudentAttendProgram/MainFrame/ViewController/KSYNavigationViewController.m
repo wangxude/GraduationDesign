@@ -47,9 +47,9 @@
     if (self.viewControllers.count != 0)
     {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setBackgroundImage:[UIImage imageNamed:@"返回"]
+        [button setBackgroundImage:[UIImage imageNamed:@"navigationbar_back"]
                           forState:UIControlStateNormal];
-        [button setBackgroundImage:[UIImage imageNamed:@"返回"]
+        [button setBackgroundImage:[UIImage imageNamed:@"navigationbar_back_highlighted"]
                           forState:UIControlStateHighlighted];
         
         [button addTarget:self action:@selector(backTopre)

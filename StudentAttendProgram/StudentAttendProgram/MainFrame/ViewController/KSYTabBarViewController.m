@@ -14,9 +14,10 @@
 #import "KSYNavigationViewController.h"
 
 #import "TKHomeViewController.h"
-#import "TLChartsViewController.h"
+#import "TLSelectModuleViewController.h"
 #import "SAPAttendListViewController.h"
 #import "TLStudentInformationViewController.h"
+#import "TLCurriculumViewController.h"
 
 
 @interface KSYTabBarViewController (){
@@ -76,15 +77,18 @@
     TKHomeViewController *demandVC = [[TKHomeViewController alloc]init];
     [self setUpOneChildViewController:demandVC image:[UIImage imageNamed:@"tabBar_icon_contrast_default"] selectedImage:[UIImage imageWithOriginalName:@"tabBar_icon_contrast"] title:@"签到"];
     
-    TLChartsViewController * listVC = [[TLChartsViewController alloc]init];
+    TLSelectModuleViewController * listVC = [[TLSelectModuleViewController alloc]init];
     [self setUpOneChildViewController:listVC image:[UIImage imageNamed:@"tabBar_icon_schedule_default"] selectedImage:[UIImage imageWithOriginalName:@"tabBar_icon_schedule"] title:@"图表"];
     
     TLStudentInformationViewController *studentInformationVC = [[TLStudentInformationViewController alloc]init];
     [self setUpOneChildViewController:studentInformationVC image:[UIImage imageNamed:@"tabBar_icon_customer_default"] selectedImage:[UIImage imageWithOriginalName:@"tabBar_icon_customer"] title:@"学生信息"];
     
-    SAPAttendListViewController *attendListVC = [[SAPAttendListViewController alloc]init];
-    [self setUpOneChildViewController:attendListVC image:[UIImage imageNamed:@"tabBar_icon_contrast_default"] selectedImage:[UIImage imageWithOriginalName:@"tabBar_icon_contrast"] title:@"通讯录"];
-    
+//    SAPAttendListViewController *attendListVC = [[SAPAttendListViewController alloc]init];
+//    [self setUpOneChildViewController:attendListVC image:[UIImage imageNamed:@"tabBar_icon_contrast_default"] selectedImage:[UIImage imageWithOriginalName:@"tabBar_icon_contrast"] title:@"我的"];
+     TLCurriculumViewController *attendListVC = [[ TLCurriculumViewController alloc]init];
+    [self setUpOneChildViewController:attendListVC image:[UIImage imageNamed:@"tabBar_icon_contrast_default"] selectedImage:[UIImage imageWithOriginalName:@"tabBar_icon_contrast"] title:@"课程表"];
+
+   
 }
 - (void)setUpTabBar
 {

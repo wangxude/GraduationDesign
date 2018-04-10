@@ -12,31 +12,61 @@
 #import "MBProgressHUD.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "FMDatabaseService.h"
+#import "TLMulchooseViewController.h"
 
 @interface TKHomeViewController ()<UITableViewDelegate,UITableViewDataSource,NSStreamDelegate>{
     NSInputStream *_inputStream; //对应输入流
     NSOutputStream *_outputStream; //对应输出流
 }
 
-@property (nonatomic,strong) NSMutableArray* studentDataArray;
+@property (nonatomic,strong) NSMutableArray *studentDataArray;
+@property (nonatomic,strong) NSArray *nameArray;
 
-@property (nonatomic,strong) UITableView* studentTableView;
+@property (nonatomic,strong) UITableView *studentTableView;
 
+@property (nonatomic,strong) TLStudentViewModel *studentModel;
+
+@property (nonatomic,strong) NSMutableArray *dataArray;
+
+@property (nonatomic,strong) UIButton *leftButton;
 @property (nonatomic,strong) UIButton *rightButton;
 
 @property (nonatomic,strong) FMDatabaseService *service;
+
+@property (nonatomic,assign) NSInteger numberOne;
+@property (nonatomic,assign) NSInteger numberTwo;
+@property (nonatomic,assign) NSInteger numberThree;
 
 @end
 
 @implementation TKHomeViewController
 
+- (NSArray*)nameArray {
+    if (!_nameArray) {
+        _nameArray = @[@"BA21BAA4\r\n",@"CCB2305B\r\n",@"DAA3BAA4\r\n"];
+    }
+    return _nameArray;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.service = [[FMDatabaseService shareInstance]initWithDatabase];
+ 
     [self initWithTableView];
-    [self initWithData];
+   // [self initWithData];
+    self.studentDataArray = [[NSMutableArray alloc]init];
+    
+    self.dataArray  = [[NSMutableArray alloc]init];
+    
     [self connectToHost];
+    
+    UIButton *leftButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 20)];
+    [leftButton setTitle:@"请假" forState:UIControlStateNormal];
+    [leftButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [leftButton addTarget:self action:@selector(qingjia) forControlEvents:UIControlEventTouchUpInside];
+    self.leftButton = leftButton;
+    UIBarButtonItem *leftItem=[[UIBarButtonItem alloc]initWithCustomView:leftButton];
+    self.navigationItem.leftBarButtonItem= leftItem;
     
     UIButton *rightButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 20)];
     [rightButton setTitle:@"连接中" forState:UIControlStateNormal];
@@ -45,21 +75,38 @@
     self.rightButton = rightButton;
     UIBarButtonItem *rightItem=[[UIBarButtonItem alloc]initWithCustomView:rightButton];
     self.navigationItem.rightBarButtonItem= rightItem;
+    
+    if (@available(iOS 11.0, *)) {
+        self.studentTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        // Fallback on earlier versions
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+   
+    self.numberOne = 0;
+    self.numberThree = 0;
+    self.numberTwo = 0;
     // Do any additional setup after loading the view.
+}
+
+- (void)qingjia {
+    TLMulchooseViewController *chooseVC = [[TLMulchooseViewController alloc]init];
+    chooseVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:chooseVC animated:YES];
 }
 
 #pragma mark - 连接服务器
 
 -(void)connectToHost{
     //建立连接
-//    NSString* host = @"192.168.76.110";
-//    //端口号
-//    int port = 8086;
-    
-    // 建立连接
-    NSString* host = @"192.168.76.158";
+    NSString* host = @"192.168.76.110";
     //端口号
     int port = 8086;
+    
+    // 建立连接
+//    NSString* host = @"192.168.76.99";
+//    //端口号
+//    int port = 8086;
     
     //定义C语言输入输出流
     CFReadStreamRef readStream;
@@ -148,26 +195,51 @@
     //从服务器中接收的数据
     NSString* readStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     NSLog(@"%@",readStr);
-    if (readStr != nil) {
-        
-        
-        if ([readStr isEqual:@"a"]) {
-           NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:@"点名",@"images",@"王旭",@"title",@"0",@"sexIndex",@"2018:01:31 20:00:00",@"year",@"144939392",@"id",nil];
-            TLStudentModel * model = [[TLStudentModel alloc]initWithStudentModel:dic];
-            
-            [self.service insertDatabase:model];
-            [self.studentDataArray addObject:model];
-            [self.studentTableView reloadData];
+    
+      NSString *nameStinrg ;
+    
+     [self.dataArray addObject:readStr];
+       NSDictionary *dic;
+        if ([readStr isEqualToString:self.nameArray[0]]) {
+            dic = [NSDictionary dictionaryWithObjectsAndKeys:@"009.png",@"images",@"李赛",@"title",@"0",@"sexIndex",[self getNowTime],@"year",@"144939392",@"id",nil];
+            nameStinrg = @"李赛";
+            if (self.numberOne == 1) {
+                
+            }
+            else {
+                self.numberOne ++;
+            }
+        }
+        else if ([readStr isEqual:self.nameArray[1]]){
+            dic = [NSDictionary dictionaryWithObjectsAndKeys:@"006.png",@"images",@"张芳",@"title",@"0",@"sexIndex",[self getNowTime],@"year",@"144939393",@"id",nil];
+            nameStinrg = @"张芳";
+            if (self.numberTwo == 1) {
+                
+            }
+            else {
+                self.numberTwo ++;
+            }
         }
         else {
-             NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:@"点名",@"images",@"王旭",@"title",@"0",@"sexIndex",@"2018:01:31 20:00:00",@"year",@"144939392",@"id",nil];
-            TLStudentModel * model = [[TLStudentModel alloc]initWithStudentModel:dic];
-            [self.studentDataArray addObject:model];
-            [self.studentTableView reloadData];
+            dic = [NSDictionary dictionaryWithObjectsAndKeys:@"004.png",@"images",@"王旭",@"title",@"0",@"sexIndex",[self getNowTime],@"year",@"144939394",@"id",nil];
+            nameStinrg = @"王旭";
+            if (self.numberThree == 1) {
+                
+            }
+            else {
+                self.numberThree ++;
+            }
         }
-        
-    }
-  
+       NSInteger number = self.numberThree + self.numberTwo + self.numberOne;
+       [[NSUserDefaults standardUserDefaults]setInteger:number forKey:@"number"];
+    
+    
+      [[NSNotificationCenter defaultCenter]postNotificationName:TLNameTitle object:nameStinrg];
+    
+        TLStudentModel *model = [[TLStudentModel alloc]initWithStudentModel:dic];
+        [self.service insertDatabase:model];
+        [self.studentDataArray addObject:model];
+        [self.studentTableView reloadData];
 }
 
 - (void)writeData {
@@ -199,23 +271,20 @@
     
 //    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
 //        //[self doSomeWork];
-    TLStudentViewModel *model = [[TLStudentViewModel alloc]init];
+    self.studentModel = [[TLStudentViewModel alloc]init];
 
-    model.returnValueBlock = ^(id returnValue) {
-        self.studentDataArray = returnValue;
-        [self.studentTableView reloadData];
+    __weak typeof(self) weakSelf = self;
+    self.studentModel.returnValueBlock = ^(id returnValue) {
+        weakSelf.studentDataArray = returnValue;
+        [weakSelf.studentTableView reloadData];
         //[hud hideAnimated:YES];
     };
-    model.errorCodeBlock = ^(id errorCode) {
+    self.studentModel.errorCodeBlock = ^(id errorCode) {
         NSLog(@"%@",errorCode);
     };
-    [model getStudentData];
+    [self.studentModel getStudentData];
     self.studentDataArray = [[NSMutableArray alloc]init];
     
-//    NSDictionary * dic = [NSDictionary dictionaryWithObjectsAndKeys:@"images",@"点名",@"title",@"王旭",@"sexIndex",@"0",@"timeText",@"2018:01:31 20:00:00",@"id",@"144939392",nil];
-//    TLStudentModel * model1 = [[TLStudentModel alloc]initWithStudentModel:dic];
-//    [self.studentDataArray addObject:];
-   // [self.studentTableView reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -243,14 +312,30 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%@",[self.service queryDatabase]);
-    [self writeData];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    //NSLog(@"%@",[self.service queryDatabase]);
+   
+//    [self.studentModel studentDetailWithPublicModel:self.studentDataArray[indexPath.row] WithViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//获取当前时间戳有两种方法(以秒为单位)
+- (NSString*)getNowTime {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+//    [formatter setDateStyle:NSDateFormatterMediumStyle];
+//    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"]; //// ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
+    NSTimeZone *zone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    [formatter setTimeZone:zone];
+    NSDate *dataNow = [NSDate date];
+    NSString *timeString = [formatter stringFromDate:dataNow];
+    return timeString;
+}
+
 
 /*
 #pragma mark - Navigation

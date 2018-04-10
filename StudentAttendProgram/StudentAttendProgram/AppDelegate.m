@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "KSYTabBarViewController.h"
+#import "SignInViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,12 @@
     
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     self.window.backgroundColor = [UIColor whiteColor];
-    KSYTabBarViewController * tabbarVC = [[KSYTabBarViewController alloc]init];
-    self.window.rootViewController = tabbarVC;
+    SignInViewController *signVC = [[SignInViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController: signVC];
+    self.window.rootViewController = nav;
+    
+//    KSYTabBarViewController * tabbarVC = [[KSYTabBarViewController alloc]init];
+//    self.window.rootViewController = tabbarVC;
     [self.window makeKeyAndVisible];
     
     // Override point for customization after application launch.

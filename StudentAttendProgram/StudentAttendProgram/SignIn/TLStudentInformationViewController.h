@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TLFriend.h"
+
 
 @interface TLStudentInformationViewController : UIViewController
 
-@property (nonatomic,copy) NSString* detailUrl;
+//@property (nonatomic,copy) NSString* detailUrl;
+//
+//@property (nonatomic,assign) int studentId;
+@property (nonatomic,strong) TLFriend *modelFriendsDic;
+
+@property (nonatomic,copy) NSString *className;
 
 @end

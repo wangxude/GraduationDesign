@@ -11,6 +11,7 @@
 #import "TLStudentModel.h"
 #import "TLStudentViewModel.h"
 #import "TLStudentInformationViewController.h"
+#import "TLStudentSituationViewController.h"
 
 @implementation TLStudentViewModel
 
@@ -42,10 +43,11 @@
 }
 
 - (void)studentDetailWithPublicModel:(TLStudentModel *)model WithViewController:(UIViewController *)superController {
-    TLStudentInformationViewController *studentInformationVC = [[TLStudentInformationViewController alloc]init];
-    studentInformationVC.detailUrl = model.imageUrl;
-    studentInformationVC.hidesBottomBarWhenPushed = YES;
-    [superController.navigationController pushViewController:studentInformationVC animated:YES];
+    TLStudentSituationViewController *studentSituationVC = [[TLStudentSituationViewController alloc]init];
+//    studentInformationVC.detailUrl = model.imageUrl;
+//    studentInformationVC.studentId = model.studentId;
+    studentSituationVC.hidesBottomBarWhenPushed = YES;
+    [superController.navigationController pushViewController:studentSituationVC animated:YES];
 }
 
 @end

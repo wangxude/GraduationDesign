@@ -18,6 +18,9 @@
 @property (nonatomic, strong)  UITextField *sliderTextX;
 @property (nonatomic, strong)  UITextField *sliderTextY;
 
+@property (nonatomic,assign) NSInteger successNumber;
+@property (nonatomic,assign) NSInteger failureUnmber;
+
 @end
 
 @implementation TLChartsViewController
@@ -25,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
 
     self.options = @[
                      @{@"key": @"toggleValues", @"label": @"Toggle Y-Values"},
@@ -59,12 +63,17 @@
     _chartView.entryLabelColor = UIColor.whiteColor;
     _chartView.entryLabelFont = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.f];
     
+    self.successNumber = [[NSUserDefaults standardUserDefaults]integerForKey:@"number"];
+    self.failureUnmber = [[NSUserDefaults standardUserDefaults]integerForKey:@"goHomeNumber"];;
 //    _sliderX.value = 4.0;
 //    _sliderY.value = 100.0;
     //[self slidersValueChanged:nil];
     [self updateChartData];
     [_chartView animateWithXAxisDuration:1.4 easingOption:ChartEasingOptionEaseOutBack];
+    
+    
 }
+
 - (void)updateChartData
 {
     if (self.shouldHideData)
@@ -73,7 +82,7 @@
         return;
     }
     
-    [self setDataCount:4 range:100];
+    [self setDataCount:3 range:17];
 }
 
 - (void)setDataCount:(int)count range:(double)range
@@ -81,11 +90,22 @@
     double mult = range;
     
     NSMutableArray *values = [[NSMutableArray alloc] init];
-    NSArray *dataArray = [[NSArray alloc]initWithObjects:@"请假",@"缺勤",@"出勤",@"迟到",nil];
-   
+    NSArray *dataArray = [[NSArray alloc]initWithObjects:@"请假",@"出勤",@"迟到",nil];
+    
     for (int i = 0; i < count; i++)
     {
-        [values addObject:[[PieChartDataEntry alloc] initWithValue:(arc4random_uniform(mult) + mult / 5) label:[NSString stringWithFormat:@"%@",[dataArray objectAtIndex:i]] icon: [UIImage imageNamed:@"icon"]]];
+        NSInteger studentNumber ;
+        if (i == 0) {
+            studentNumber = self.failureUnmber;
+        }
+        else if (i == 1){
+            studentNumber = self.successNumber;
+        }
+        else {
+            studentNumber = mult - self.successNumber - self.failureUnmber;
+        }
+        [values addObject:[[PieChartDataEntry alloc] initWithValue:studentNumber label:[NSString stringWithFormat:@"%@",[dataArray objectAtIndex:i]] icon: [UIImage imageNamed:@"icon"]]];
+        //(arc4random_uniform(mult) + mult / 5)
     }
     
     PieChartDataSet *dataSet = [[PieChartDataSet alloc] initWithValues:values label:@""];

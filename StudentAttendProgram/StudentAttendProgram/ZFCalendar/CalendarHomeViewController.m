@@ -88,10 +88,21 @@
 //获取时间段内的天数数组
 - (NSMutableArray *)getMonthArrayOfDayNumber:(int)day ToDateforString:(NSString *)todate
 {
-    
-    NSDate *date = [NSDate date];
-    
-    NSDate *selectdate  = [NSDate date];
+//    NSTimeInterval secondsPerDay = 24 * 60 * 60;
+//
+//
+//    //明天时间
+//    NSDate *tomorrow = [[NSDate alloc] initWithTimeIntervalSinceNow:secondsPerDay];
+//
+//
+//    //昨天时间
+//    NSDate *yesterday = [[NSDate alloc] initWithTimeIntervalSinceNow:-secondsPerDay];
+    NSTimeInterval interval = 24 * 60 * 60 * 30;
+    NSDate *date = [[NSDate alloc]initWithTimeIntervalSinceNow:-interval];
+    NSDate *selectdate = [NSDate date];
+//    NSDate *date = [NSDate date];
+//
+//    NSDate *selectdate  = [NSDate date];
     
     if (todate) {
         
